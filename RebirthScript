@@ -1,6 +1,7 @@
 local Gui = game.Players.LocalPlayer.PlayerGui.GUI
 local Settings = Gui.Settings
 local RebirthMenu = Settings.Menu.PrimaryUtil.Rebirth
+RebirthMenu.Progress.Bar.Size = UDim2.new(1,0,1,0)
 local Notice = require(Gui.NoticePrompt.InputPrompt.NoticePrompt)   
 print("RebirthMenu")
 RebirthMenu.Header.LifeBox.SkipBox.Visible = true
