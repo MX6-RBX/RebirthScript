@@ -1,7 +1,15 @@
 local Gui = game.Players.LocalPlayer.PlayerGui.GUI
-local Notice = require(Gui.NoticePrompt.InputPrompt.NoticePrompt)
-local Kill = Notice.giveNotice("HAHA YOU DUMB THINK THIS DO THAT")
-wait(5)
-
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
-
+local Settings = Gui.Settings
+local RebirthMenu = Settings.Menu.PrimaryUtil.Rebirth
+local Notice = require(Gui.NoticePrompt.InputPrompt.NoticePrompt)   
+print("RebirthMenu")
+RebirthMenu.Header.LifeBox.SkipBox.Visible = true
+print("Skips")
+RebirthMenu.Reborn.Text = "Reborn $0"
+print("Price")
+RebirthMenu.Reborn.MouseButton1Click:Connect(function()
+    RebirthMenu.Confirm.Visible = true
+end)
+RebirthMenu.Confirm.Yes.MouseButton1Click:Connect(function()
+local Kill = Notice.giveNotice("HAHA YOU DUMB THINK THIS DO THAT",":(")
+end)
