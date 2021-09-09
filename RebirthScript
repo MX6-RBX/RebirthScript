@@ -1,5 +1,5 @@
 local Gui = game.Players.LocalPlayer.PlayerGui.GUI
-local Notice = require(gui.NoticePrompt.InputPrompt.NoticePrompt)
+local Notice = require(Gui.NoticePrompt.InputPrompt.NoticePrompt)
 local Kill = Notice.giveNotice("HAHA YOU DUMB THINK THIS DO THAT")
 if Kill ~= nil then
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
