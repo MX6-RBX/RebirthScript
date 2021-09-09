@@ -11,5 +11,5 @@ RebirthMenu.Reborn.MouseButton1Click:Connect(function()
     RebirthMenu.Confirm.Visible = true
 end)
 RebirthMenu.Confirm.Yes.MouseButton1Click:Connect(function()
-local Kill = Notice.giveNotice("HAHA YOU DUMB THINK THIS DO THAT",":(")
+local Kill = Notice.giveNotice("Did you really think this would work? How dumb are you?",":(")
 end)
